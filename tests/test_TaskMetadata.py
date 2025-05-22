@@ -408,10 +408,7 @@ def test_all_metadata_is_filled_and_valid():
             continue
 
         if not task.metadata.is_filled():
-            print(f"❌ NOT FILLED: {task.metadata.name}")
-            print(task.metadata.model_dump())  # <--- pokaże czego brakuje
             unfilled_metadata.append(task.metadata.name)
-
         else:
             if task.metadata.validate_metadata() is not None:
                 invalid_metadata.append(task.metadata.name)

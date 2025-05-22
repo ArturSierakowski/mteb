@@ -20,7 +20,7 @@ class SciFact(AbsTaskRetrieval):
         eval_splits=["test"],
         eval_langs=["eng-Latn"],
         main_score="ndcg_at_10",
-        date=("2020-04-30", "2020-10-03"),
+        date=("2000-01-01", "2020-10-03"),  # best guess
         domains=["Academic", "Medical", "Written"],
         task_subtypes=[],
         license="not specified",

@@ -20,7 +20,7 @@ class SciDocsReranking(AbsTaskReranking):
         eval_splits=["test"],
         eval_langs=["eng-Latn"],
         main_score="map",
-        date=("2000-01-01", "2020-12-31"),  # best guess
+        date=("2000-01-01", "2020-05-20"),  # best guess
         domains=["Academic", "Non-fiction", "Written"],
         task_subtypes=["Scientific Reranking"],
         license="cc-by-4.0",
