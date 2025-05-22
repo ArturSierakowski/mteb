@@ -20,12 +20,12 @@ class SciDocsReranking(AbsTaskReranking):
         eval_splits=["test"],
         eval_langs=["eng-Latn"],
         main_score="map",
-        date=("2000-01-01", "2020-12-31"),  # best guess
-        domains=["Academic", "Non-fiction", "Written"],
+        date=("2000-01-01", "2020-03-01"),
+        domains=["Academic", "Non-fiction"],
         task_subtypes=["Scientific Reranking"],
         license="cc-by-4.0",
-        annotations_creators=None,
-        dialect=None,
+        annotations_creators="derived",
+        dialect=[],
         sample_creation="found",
         prompt="Given a title of a scientific paper, retrieve the titles of other relevant papers",
         bibtex_citation=r"""
@@ -50,6 +50,5 @@ Tetreault, Joel},
   url = {https://aclanthology.org/2020.acl-main.207},
   year = {2020},
 }
-""",
-        adapted_from=["SCIDOCS"],
+"""
     )
