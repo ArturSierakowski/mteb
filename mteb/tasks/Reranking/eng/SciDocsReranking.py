@@ -20,8 +20,8 @@ class SciDocsReranking(AbsTaskReranking):
         eval_splits=["test"],
         eval_langs=["eng-Latn"],
         main_score="map",
-        date=("2000-01-01", "2020-03-01"),
-        domains=["Academic", "Non-fiction"],
+        date=("2000-01-01", "2020-12-31"),  # best guess
+        domains=["Academic", "Non-fiction", "Written"],
         task_subtypes=["Scientific Reranking"],
         license="cc-by-4.0",
         annotations_creators="derived",
@@ -50,5 +50,6 @@ Tetreault, Joel},
   url = {https://aclanthology.org/2020.acl-main.207},
   year = {2020},
 }
-"""
+""",
+        adapted_from=["SCIDOCS"],
     )

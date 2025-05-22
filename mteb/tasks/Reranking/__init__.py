@@ -5,8 +5,6 @@ from .eng.AskUbuntuDupQuestions import *
 from .eng.BuiltBenchReranking import *
 from .eng.MindSmallReranking import *
 from .eng.SciDocsReranking import *
-from .eng.SciDocs import *
-from .eng.SciFact import *
 from .eng.StackOverflowDupQuestions import *
 from .eng.WebLINXCandidatesReranking import *
 from .fra.AlloprofReranking import *

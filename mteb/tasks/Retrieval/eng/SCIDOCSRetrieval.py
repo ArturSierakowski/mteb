@@ -23,11 +23,11 @@ class SCIDOCS(AbsTaskRetrieval):
         eval_splits=["test"],
         eval_langs=["eng-Latn"],
         main_score="ndcg_at_10",
-        date=None,
+        date=("2000-01-01", "2020-03-01"),
         domains=["Academic", "Written", "Non-fiction"],
         task_subtypes=[],
         license="cc-by-sa-4.0",
-        annotations_creators=None,
+        annotations_creators="derived",
         dialect=[],
         sample_creation="found",
         bibtex_citation=r"""
